@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position relative</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+        } */
+
+        .div-1 {
+            height: 165px;
+            width: 165px;
+            background-color: rgb(255, 132, 0);
+            padding: 20px;
+            
+        }
+
+        .div-2 {
+            height: 165px;
+            width: 165px;
+            background-color: rgb(14, 251, 14);
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            top: -100px;
+            left: 100px;
+        }
+
+        .div-3 {
+            height: 165px;
+            width: 165px;
+            background-color: rgb(57, 36, 195);
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            top: -205px;
+            left: 205px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="div-4">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+    </div>
+</body>
+
+</html>
