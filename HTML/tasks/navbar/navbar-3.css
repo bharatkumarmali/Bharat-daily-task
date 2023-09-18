@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: aquamarine;
+    color: black;
+    height: fit-content;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+nav a:hover {
+    background-color:aqua;
+}
+.more {
+    /* display: flex; */
+    max-width:max-content;
+    width: 100%;
+}
+.more button {
+    padding: 20px;
+    border: none;
+    background-color:aquamarine;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.more:hover .hide {
+    display: block;
+}
+
+.more:hover .hide a {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100px;
+}
+
+.more:hover .hide a:hover {
+    background-color: aqua;
+    color: black;
+}
+
