@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table-1</title>
     <style>
+        /* table-5  */
         .table-5 td {
             font-size: 30px;
             text-align: center;
             color: white;
             font-weight: bolder;
             font-family: sans-serif;
+        }
+
+        /* table-9 */
+        .yellow {
+            background-color: #e9e939;
+        }
+
+        .light-green {
+            background-color: #7fc319;
+        }
+
+        .purple {
+            background-color: #e66de6;
+        }
+
+        /* table-10  */
+        .background-color {
+            background-color: #ededed;
         }
     </style>
 </head>
@@ -156,22 +175,22 @@
         <h1>Table-5</h1>
         <table class="table-5" border="1" cellspacing="0" cellpadding="50" width="50%" style="background-color: black;">
             <tr>
-                <td style="background-color: #fc6868;">1</td>
-                <td style="background-color: #fc68e8;">2</td>
-                <td style="background-color: #68a1fc;">3</td>
+                <td style="background-color: #fc6868; border: 15px solid #fb5e5e;">1</td>
+                <td style="background-color: #fc68e8; border: 15px solid #f95de4;">2</td>
+                <td style="background-color: #d9fc68;  border: 15px solid #d1f559;">3</td>
             </tr>
             <tr>
-                <td style="background-color: #91bdef;">4</td>
-                <td style="background-color: #68fcc8;">5</td>
-                <td style="background-color: #21f448;">6</td>
+                <td style="background-color: #70aef4; border: 15px solid #5ca3f5;">4</td>
+                <td style="background-color: #68fcc8; border: 15px solid #5df7c1;">5</td>
+                <td style="background-color: #64ee7d; border: 15px solid #4eef6c;">6</td>
             </tr>
             <tr>
-                <td style="background-color: #fc68b4;">7</td>
-                <td style="background-color: #9968fc;">8</td>
-                <td style="background-color: #f5fc68;">9</td>
+                <td style="background-color: #fc68b4; border: 15px solid #f55aaa;">7</td>
+                <td style="background-color: #9968fc; border: 15px solid #905ef4;">8</td>
+                <td style="background-color: #f5fc68; border: 15px solid #ebf353;">9</td>
             </tr>
             <tr>
-                <td style="background-color: #f1681f;">10</td>
+                <td style="background-color: #f1681f; border: 15px solid #fe5900;">10</td>
             </tr>
         </table>
     </center>
@@ -274,9 +293,9 @@
     <center>
         <h1>Table-7</h1>
         <table cellpadding="20" cellspacing="0" style="height: 20px; width: 1000px;">
-            <tr style="background-color: #7c4cff;color: crimson; font-size: 20px;">
+            <tr style="background-color: #7c4cff;color: #000000; font-size: 20px;">
                 <th colspan="8" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                    ----------TIME TABLE-----------</th>
+                    --------------------TIME TABLE---------------------</th>
             </tr>
             <tr>
                 <th style="background-color: #5102ff; color: white;">TIME</th>
@@ -351,6 +370,170 @@
         </table>
     </center>
     <br><br>
+    <hr>
+    <br><br>
+
+    <!-- table-8  -->
+    <center>
+        <h1>Table-8</h1>
+        <table border="2" cellspacing="0" cellpadding="10px" bordercolor="green" height="50%" width="50%">
+            <tr>
+                <th colspan="4">
+                    TITLE
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    SUBTITLE
+                </th>
+                <th colspan="2">
+                    SUBTITLE
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    item 1 <br> <br>
+                    item 1 <br> <br>
+                    item 1 <br> <br>
+                </th>
+                <th>
+                    123 <br> <br>
+                    123 <br> <br>
+                    123 <br> <br>
+                </th>
+                <th>
+                    item 2 <br> <br>
+                    item 2 <br> <br>
+                    item 2 <br> <br>
+                </th>
+                <th>
+                    456 <br> <br>
+                    456 <br> <br>
+                    456 <br> <br>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    SUBTITLE
+                </th>
+                <th colspan="2">
+                    SUBTITLE
+                </th>
+            </tr>
+        </table>
+    </center>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- table-9  -->
+
+    <center>
+        <h1>Table-9</h1>
+        <table border="1" cellpadding="10" width="40%">
+
+            <!-- headding  -->
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+
+            <!-- monday  -->
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2" class="yellow">8:00 AM</td>
+                <td rowspan="2" class="purple">5:00 PM</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+
+            <!-- tuesday  -->
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td class="yellow">8:00 AM</td>
+                <td class="yellow">11:00 AM</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td class="yellow">11:00 AM</td>
+                <td class="light-green">2:00 PM</td>
+            </tr>
+            <tr>
+                <td class="light-green">2:00 PM</td>
+                <td class="purple">5:00 PM</td>
+                <td>XSL Transfromations</td>
+            </tr>
+
+            <!-- wednesday  -->
+            <tr>
+                <td>Wednesday</td>
+                <td class="yellow">8:00 AM</td>
+                <td class="light-green">12:00 PM</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </table>
+    </center>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- table-10  -->
+
+    <center>
+        <h1>Table-10</h1>
+        <table border="1" cellspacing="0" cellpadding="10px" height="200px" width="50%">
+
+            <tr class="background-color">
+                <td><b>Item/Desc.</b></td>
+                <td><b>Qty.</b></td>
+                <td><b>@</b></td>
+                <td><b>Price</b></td>
+            </tr>
+            <tr>
+                <td>Paperclips (Box)</td>
+                <td>100</td>
+                <td>1.15</td>
+                <td>115.00</td>
+            </tr>
+            <tr>
+                <td>Paper (Case)</td>
+                <td>10</td>
+                <td>45.99</td>
+                <td>459.90</td>
+            </tr>
+            <tr>
+                <td>Wastepaper <br> Baskets</td>
+                <td>2</td>
+                <td>17.99</td>
+                <td>35.98</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="background-color"><b>Subtotal</b></td>
+                <td>610.88</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="background-color"><b>Tax</b></td>
+                <td>7%</td>
+                <td>42.76</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="background-color"><b>Total</b></td>
+                <td>653.64</td>
+            </tr>
+        </table>
+    </center>
+    <br><br>
+
 
 </body>
 
