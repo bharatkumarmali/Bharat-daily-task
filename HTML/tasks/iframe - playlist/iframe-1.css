@@ -1,0 +1,37 @@
+
+
+body {
+    background-color: aquamarine;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    /* background-color: aliceblue; */
+    padding: 20px;
+    font-size: 18px;
+    color: black;
+    height: fit-content;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.singers:hover .hide {
+    display: block;
+}
+
+.singers:hover .hide a {
+    display: block;
+    padding: 5px;
+}
+
+.singers:hover .hide a:hover {
+    background-color: aqua;
+}
+
