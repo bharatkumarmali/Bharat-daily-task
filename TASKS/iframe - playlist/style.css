@@ -9,10 +9,9 @@ nav {
     background-color: black;
     width: 100%;
     border-radius: 40px;
+    justify-content: center;
     position: sticky;
     top: 0;
-    justify-content: center;
-
 }
 
 nav a {
@@ -42,6 +41,7 @@ nav button:hover {
 
 .hide {
     display: none;
+    z-index: 1 !important;
 }
 
 .singers:hover .hide {
@@ -52,4 +52,9 @@ nav button:hover {
 .singers:hover .hide a {
     display: block;
     text-align: left;
+}
+marquee {
+    position: relative;
+    z-index: -5;
+    top: 0;
 }
