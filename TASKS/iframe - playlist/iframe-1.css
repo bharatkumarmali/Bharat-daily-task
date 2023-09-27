@@ -1,21 +1,43 @@
-
-
-body {
-    background-color: aquamarine;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 nav {
     display: flex;
+    background-color: black;
+    width: 100%;
+    border-radius: 40px;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+
 }
 
 nav a {
     text-decoration: none;
-    /* background-color: aliceblue; */
-    padding: 20px;
-    font-size: 18px;
-    color: black;
-    height: fit-content;
-    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    border: 0;
+    cursor: pointer;
+}
+
+nav button:hover {
+    text-decoration: underline;
 }
 
 .hide {
@@ -24,14 +46,10 @@ nav a {
 
 .singers:hover .hide {
     display: block;
+    position: absolute;
 }
 
 .singers:hover .hide a {
     display: block;
-    padding: 5px;
+    text-align: left;
 }
-
-.singers:hover .hide a:hover {
-    background-color: aqua;
-}
-
