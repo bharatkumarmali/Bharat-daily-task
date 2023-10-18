@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-10</title>
+
+    <!-- code  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            /* box-sizing: border-box; */
+        }
+
+        .main {
+            background-color: gray;
+            height: 618px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card-child {
+            background-color: white;
+            width: 268px;
+            height: fit-content;
+            text-align: center;
+            border-radius: 20px;
+            padding: 3px;
+        }
+
+        .heading {
+            height: 50%;
+        }
+
+        .heading>h1 {
+            padding: 93px;
+            border-radius: 20px 20px 112px 0px;
+            border: 2px solid orange;
+        }
+
+        .content {
+            width: 80%;
+            height: 246px;
+            /* height: 50%; */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .content>p {
+            letter-spacing: 1px;
+            line-height: 21px;
+            padding: 20px 0px;
+        }
+
+        .content>button {
+            height: 39px;
+            width: 117px;
+            background: linear-gradient(to right, #ffa600ee, #ff5600);
+            color: #fff2f2;
+            border-radius: 20px;
+            border: 2px solid #b3b0b0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .content>button:active {
+            background: linear-gradient(to right, #00000072, #000000c7);
+        }
+
+        .code-color h1,
+        .code-color button {
+            background: linear-gradient(to right, #ffa600ee, #ff5600);
+        }
+
+        .css3-color h1,
+        .css3-color button {
+            background: linear-gradient(to right, #cb3cb5, #770195);
+        }
+
+        .html5-color h1,
+        .html5-color button {
+            background: linear-gradient(to right, #9874d6, #673AB7);
+        }
+
+        .js-color h1,
+        .js-color button {
+            background: linear-gradient(to right, #43ee56, #017702);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card-child code-color">
+            <div class="heading">
+                <h1><i class="fa-solid fa-code fa-beat fa-2xl" style="color: #ffffff;"></i></h1>
+            </div>
+            <div class="content">
+                <h3>TITLE</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam ex debitis error
+                    voluptatem totam
+                </p>
+                <button>CODE</button>
+            </div>
+        </div>
+        <div class="card-child  css3-color">
+            <div class="heading">
+                <h1><i class="fa-brands fa-css3-alt fa-beat fa-2xl" style="color: #ffffff;"></i></h1>
+            </div>
+            <div class="content">
+                <h3>TITLE</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam ex debitis error
+                    voluptatem totam
+                </p>
+                <button>CSS3</button>
+            </div>
+        </div>
+        <div class="card-child html5-color">
+            <div class="heading">
+                <h1><i class="fa-brands fa-html5 fa-beat fa-2xl" style="color: #ffffff;"></i></h1>
+            </div>
+            <div class="content">
+                <h3>TITLE</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam ex debitis error
+                    voluptatem totam
+                </p>
+                <button>HTML5</button>
+            </div>
+        </div>
+        <div class="card-child js-color">
+            <div class="heading">
+                <h1><i class="fa-brands fa-js fa-beat fa-2xl" style="color: #ffffff; border-radius: 20px;"></i></h1>
+            </div>
+            <div class="content">
+                <h3>TITLE</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam ex debitis error
+                    voluptatem totam
+                </p>
+                <button>JS</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

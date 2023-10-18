@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-4</title>
+
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            user-select: none;
+        }
+
+        /* patent */
+        .parent {
+            padding: 0px 21px;
+            width: fit-content;
+            height: 565px;
+            width: fit-content;
+            background-color: white;
+            color: black;
+        }
+
+        /* social-icons  */
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn>img {
+            width: 30px;
+            padding: 0px 6px 0px 0px;
+        }
+
+        .btn {
+            height: 46px;
+            width: 47%;
+            font-weight: 600;
+            letter-spacing: 0.7px;
+            margin: 30px 0px 15px 0px;
+            background-color: white;
+            border: 2px solid #d0cdcd;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .btn>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn>a:active {
+            color: blue;
+        }
+
+        /* or  */
+        .dash {
+            color: #e7e4e4;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .or {
+            margin: 15px 0px;
+            text-align: center;
+            color: #787171;
+        }
+
+        .or-1 {
+            padding: 9px 8px;
+            background-color: #e7e4e4;
+            border-radius: 50%;
+        }
+
+        /* form  */
+        input[type="number"] {
+            padding: 18px 12px 12px 12px;
+            width: 355px;
+            outline: none;
+            border: none;
+            border-bottom: 3px solid black;
+            font-size: 16px;
+            margin: 15px 0px;
+            background-color: #e7e4e4;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin: 15px 0px;
+        }
+
+        .t-c {
+            cursor: pointer;
+        }
+
+        .next {
+            height: 46px;
+            width: 47%;
+            width: 100%;
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            margin: 15px 0px;
+            cursor: pointer;
+        }
+
+        .next:active {
+            background-color: #09a209;
+            color: white;
+        }
+
+        .hr {
+            border: none;
+            border-bottom: 2px solid #e7e4e4;
+        }
+
+        /* register  */
+        .register {
+            display: grid;
+            justify-items: center;
+            margin: 15px 0px;
+        }
+
+        .register>p {
+            padding: 5px;
+        }
+
+        .register>p>a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="parent">
+            <div class="social-icons">
+                <button class="btn"><img src="images/facebook.png" alt="facebook-icon"><a href="#">FACEBOOK</a></button>
+                <button class="btn"><img src="images/google.png" alt="google-icon"><a href="#">GOOGLE</a></button>
+            </div>
+            <div class="or">
+                <span class="dash">----</span>
+                <span class="or-1">OR</span>
+                <span class="dash">----</span>
+            </div>
+            <div class="form">
+                <div>
+                    <input type="number" value="7201003120">
+                </div>
+                <div>
+                    <input type="checkbox" id="check"> &nbsp; <label for="check" class="t-c">I certify that I am above
+                        18
+                        years.</label>
+                </div>
+                <div class="hr">
+                    <button class="next">Next</button>
+                </div>
+            </div>
+            <div class="register">
+                <p style="color: #787171;">Not a member?</p>
+                <p><a href="#">Register</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

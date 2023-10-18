@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-12</title>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: content-box;
+            text-decoration: none;
+        }
+
+        /* background-image  */
+        .main {
+            background-color: #26ff00;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+            background: linear-gradient(to right, #000000a8, #000000a8), url(images/nature-image.png);
+            background-size: cover;
+        }
+
+        /* nav */
+        .nav {
+            /* background-color: #0afb52; */
+            width: 822px;
+            height: 85px;
+            margin: auto;
+            display: flex;
+            justify-content: right;
+        }
+
+        .left {
+            /* background-color: #000000; */
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .right {
+            /* background-color: #e17b7b; */
+            width: 70%;
+            height: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+
+
+        .right>a {
+            text-decoration: none;
+            color: #ffffff;
+            display: inline-block;
+            margin: 11px;
+            padding: 20px 0px;
+            font-size: 10px;
+            font-weight: 600;
+            float: right;
+            letter-spacing: 1px;
+            text-shadow: 0px 0px 5px black;
+        }
+
+        .right>a:hover {
+            border: none;
+            border-bottom: 2px solid red;
+            color: red;
+            text-shadow: none;
+        }
+
+        .right>a:active {
+            color: #eaff00;
+            text-shadow: none;
+            border: none;
+            border-bottom: 2px solid #eaff00;
+        }
+
+        /* slider  */
+        .slider {
+            /* background-color: pink; */
+            display: flex;
+            align-items: center;
+            height: 500px;
+        }
+
+        .arrow-left {
+            /* background-color: yellowgreen; */
+            width: 5%;
+            text-align: right;
+        }
+
+        .arrow-right {
+            /* background-color: blue; */
+            width: 5%;
+            text-align: left;
+        }
+
+        .slider-arrows {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 60px;
+            cursor: pointer;
+        }
+
+        .slider-arrows:hover {
+            /* background-color: white; */
+            color: red;
+        }
+
+        .slider-arrows:active {
+            color: #b74242;
+        }
+
+        .slider-heading {
+            /* background-color: aqua; */
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            /* background-color: #000000; */
+            width: 500px;
+            text-align: center;
+            color: white;
+        }
+
+        .content>h1 {
+            letter-spacing: 6px;
+            font-size: 43px;
+        }
+
+        .content-btn {
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .content-btn>button {
+            width: 155px;
+            height: 35px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 11px;
+            letter-spacing: 0.2px;
+            cursor: pointer;
+        }
+
+        .content-btn>button:hover {
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+        .content-btn>button:active {
+            color: #eaff00;
+        }
+
+        .content-padding {
+            padding: 8px 0px;
+        }
+
+        .anchor {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            bottom: 15px;
+        }
+
+        .anchor>img {
+            height: 16px;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 40px;
+            border: 1px solid white;
+            box-shadow: 0px 0px 4px 2px #d6d0d0;
+        }
+
+
+        /* card  */
+        .card-content-padding {
+            padding: 10px 0px;
+        }
+
+        .card-saction {
+            /* background-color: lightgreen; */
+            width: unset;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .shape-parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shape {
+            border: 2px solid #9b9b9b;
+            height: 60px;
+            width: 60px;
+            transition: width 0.50s, height 0.50s, transform 0.50s;
+        }
+
+        .card-heading:hover .shape {
+            border: 2px solid red;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+
+        .card-heading:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        /* .h3-1:hover .dash {
+            display: none;
+        } */
+
+        .card {
+            /* background-color: yellow; */
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 0px;
+            letter-spacing: 0.8px;
+            margin: 0px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- nav-bar  -->
+        <nav>
+            <div class="nav">
+                <div class="left">
+                    <div class="logo">
+                        <a href="#">
+                            <h1
+                                style=" background-color: white; padding: 1.5px;width: fit-content; display: flex; justify-content: center; align-items: center;">
+
+                                <span style="padding: 1px; color: black; margin: 0px 8px 0px 8px;">L</span>
+                                <span
+                                    style="background-color: black; color: white; font-weight: 100; display: inline-block; padding: 0px 6px 6px 6px; font-family: Proza Libre; letter-spacing: 1px;">ogo</span>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">PROTFOLIO</a>
+                    <a href="#">PRICING</a>
+                    <a href="#">TEAM</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- slider  -->
+        <div class="slider">
+
+            <!-- left arrow  -->
+            <div class="arrow-left">
+                <i class="fa-solid fa-square-caret-left slider-arrows"></i>
+            </div>
+
+            <!-- slide bar  -->
+            <div class="slider-heading">
+                <div class="content">
+                    <p class="content-padding">Our Clients Are Our First Priority</p>
+                    <h1 class="content-padding">WELCOME TO SKY</h1>
+                    <img src="images/hr-line.png" alt="" class="content-padding">
+                    <p class="content-padding" style="font-size: 11px; line-height: 22px;">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit Porro quam
+                        iusto suscipit <br> aperiam est
+                        incidunt sed dolorem adipisci nobis libero natus Lorem ipsum <br> dolor sit amet consectetur
+                        adipisicing elit. Maxime modi rerum </p>
+                    <div class="content-btn content-padding">
+                        <button>GET STARTED NOW</button>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right arrow  -->
+            <div class="arrow-rightt">
+                <i class="fa-solid fa-square-caret-right slider-arrows"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- anchor  -->
+    <div class="anchor">
+        <img src="images/anchor.png" alt="anchor-image">
+    </div>
+
+
+    <!-- card-box  -->
+    <div class="card-saction">
+
+        <div class="card">
+            <div class="card-heading">
+                <div class="shape-parent">
+                    <i class="bi bi-eyeglasses" style="position: relative; top: 50px; font-size: 27px; color: red;"></i>
+                    <div class="shape"></div>
+                </div>
+                <h3 class="h3-1" style="padding: 25px 0px 0px 0px">SLEEK DESIGN</h3>
+            </div>
+            <p class="dash">______</p>
+            <div class="card-content" style="padding: 20px 0px 0px 0px; line-height: 24px; color: #6a6767;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, voluptatum?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-heading">
+                <div class="shape-parent">
+                    <i class="bi bi-heart" style="position: relative; top: 50px; font-size: 27px; color: red;"></i>
+                    <div class="shape"></div>
+                </div>
+                <h3 style="padding: 25px 0px 0px 0px">CLEAN CODE</h3>
+            </div>
+            <p class="dash">______</p>
+            <div class="card-content" style="padding: 20px 0px 0px 0px; line-height: 24px; color: #6a6767;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, voluptatum?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-heading">
+                <div class="shape-parent">
+                    <i class="bi bi-lightbulb" style="position: relative; top: 50px; font-size: 27px; color: red;"></i>
+                    <div class="shape"></div>
+                </div>
+                <h3 style="padding: 25px 0px 0px 0px">CREATIVE IDEAS</h3>
+            </div>
+            <p class="dash">______</p>
+            <div class="card-content" style="padding: 20px 0px 0px 0px; line-height: 24px; color: #6a6767;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, voluptatum?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-heading">
+                <div class="shape-parent">
+                    <i class="bi bi-chat-square"
+                        style="position: relative; top: 50px; font-size: 27px; color: red;"></i>
+                    <div class="shape"></div>
+                </div>
+                <h3 style="padding: 25px 0px 0px 0px">FREE SUPPORT</h3>
+            </div>
+            <p class="dash">______</p>
+            <div class="card-content" style="padding: 20px 0px 0px 0px; line-height: 24px; color: #6a6767;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, voluptatum?</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

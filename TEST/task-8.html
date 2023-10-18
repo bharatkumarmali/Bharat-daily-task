@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-8</title>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+
+        .select-none {
+            user-select: none;
+        }
+
+        .letter-space {
+            letter-spacing: 1px;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .gap {
+            padding: 10px 0px;
+        }
+
+        .main {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .form {
+            text-align: center;
+            max-width: 360px;
+            height: fit-content;
+            padding: 20px;
+        }
+
+        .input {
+            padding: 11px;
+            font-size: 14px;
+            border: 3px solid #d5d5d5;
+            border-radius: 35px;
+            outline: none;
+            width: 340px;
+        }
+
+        .check-c {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            width: 100%;
+            font-size: 14px;
+            padding: 11px;
+            background-color: blue;
+            color: white;
+            border-radius: 39px;
+            border: none;
+        }
+        
+        .button:active {
+            color: white;
+            background-color: #5151f7;
+        }
+
+
+        /* content  */
+        .content {
+            color: white;
+            background: linear-gradient(146deg, #9a1313, #fd0505, yellow);
+            text-align: left;
+            max-width: 372px;
+            padding: 100px 0px 100px 73px;
+            border-radius: 500px 0px 0px 500px;
+            user-select: none;
+        }
+
+        .content-btn {
+            width: 105px;
+            padding: 6px;
+            color: black;
+            background-color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 3px;
+            font-weight: 700;
+        }
+
+        .content-btn:hover {
+            color: white;
+            background-color: #5151f7;
+        }
+
+        .content-btn:active {
+            color: white;
+            background-color: blue;
+        }
+
+        .content > h2 {
+            padding: 23px 0px;
+        }
+
+        .content > p {
+            line-height: 25px;
+        }
+
+        .fa {
+            color: white;
+            margin-right: 10px;
+            padding: 23px 0px 0px 0px;
+            font-size: 21px;
+            cursor: pointer;
+        }
+
+        .fa:hover {
+            color: black;
+        }
+
+        .fa:active {
+            color: blue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="parent">
+            <div class="form">
+                <form action="">
+                    <div class="h2 gap">
+                        <h2 class="select-none letter-space">Logdy</h2>
+                    </div>
+                    <div class="par gap">
+                        <p class="select-none">Sign into your account</p>
+                    </div>
+                    <div class="email gap">
+                        <input type="email" placeholder="Email Address" class="input">
+                    </div>
+                    <div class="pass gap">
+                        <input type="password" placeholder="Password" class="input">
+                    </div>
+                    <div class="check-p">
+                        <div class="check-c gap">
+                            <div>
+                                <input type="checkbox" id="t-c">
+                                <label for="t-c" class="select-none cursor">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#" class="select-none">Forgot Password</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap">
+                        <button class="button cursor letter-space">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content">
+                <div>
+                    <button class="content-btn cursor letter-space">Login</button>
+                    <button class="content-btn cursor letter-space">Register</button>
+                </div>
+                <h2>We make spectacular</h2>
+                <p>Lorem Lorem ipsum dolor sit amet consectetur elit. Consectetur, unde! ipsum dolor sit amet,
+                    consectetur adipisicing elit?</p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

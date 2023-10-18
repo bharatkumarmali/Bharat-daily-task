@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 5px;
+        }
+
+        .one {
+            border: solid 2px black;
+            width: auto;
+            height: 100px;
+        }
+
+        #onee {
+            height: auto;
+            grid-row: 1/3;
+            background-color: red;
+        }
+
+        #two {
+            background-color: aqua;
+            grid-column: 2/4;
+
+        }
+
+        #three {
+            background-color: darkgoldenrod;
+            grid-column: 4/6;
+
+        }
+
+        #four {
+            grid-row: 2/4;
+            background-color: coral;
+
+        }
+
+        #eight {
+            grid-column: 3/5;
+
+        }
+
+        #five {
+            grid-column: 3/5;
+            grid-row: 2/4;
+            background-color: bisque;
+
+        }
+
+        #seven {
+            grid-row: 3/5;
+            background-color: bisque;
+            height: auto;
+        }
+
+        #ten {
+            grid-column: 2/4;
+            background-color: red;
+
+        }
+
+        #eleven {
+            background-color: aqua;
+
+        }
+
+        #six {
+            grid-row: 2/5;
+            height: auto;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one" id="onee">1</div>
+        <div class="one" id="two">2</div>
+        <div class="one" id="three">3</div>
+        <div class="one" id="four">4</div>
+        <div class="one" id="five">5</div>
+        <div class="one" id="six">6</div>
+        <div class="one" id="seven">7</div>
+        <!-- <div class="one" id="eight">8</div> -->
+
+        <div class="one" id="ten">10</div>
+
+        <div class="one" id="eleven">11</div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
